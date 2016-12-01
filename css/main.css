@@ -1,0 +1,105 @@
+body {
+  padding: 10px;
+    font-size: 14px;
+    color: #FF4C4C;
+    background: #7F2626;
+    border-top: 4px solid #FF0000;
+}
+
+#logo .pomodoro {
+  padding: 10px;
+    background: #FF4C4C;
+    border-radius: 10px;
+    color: #7F2626;
+}
+
+#logo .timer {
+    color: #CC0000;
+}
+
+.menu {
+    font-size: 20px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    background: #7F0000;
+    border-radius: 10px;
+    float: right;
+    margin: 10px 10px;
+    padding: 5px;
+}
+
+.menu li a {
+    color: #FF4C4C;
+    text-decoration: none;
+}
+
+#timer-wrapper {
+    max-width: 600px;
+    margin: auto;
+    font-size: 50px;
+    box-sizing: border-box;
+}
+
+#timer-wrapper .time {
+    background: #FF4C4C;
+    background: url('../images/tomato-1235662_1280.jpg');
+    border: 4px solid #FF0000;
+    border-radius: 10px 10px 0px 0px;
+    clear: both;
+    width: 100%;
+}
+
+#timer-wrapper > .time > .show-time {
+  clear: both;
+  font-family: 'Bungee', cursive;
+  font-size: 100px;
+  text-align: center;
+  color: #7F2626;
+  text-shadow: 0 0 0.2em #F87;
+  line-height: normal;
+}
+
+#timer-wrapper .ctrl-btn {
+  color: #FFF;
+}
+
+.setting-wrapper {
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(127, 0, 0, 0.5);
+  border: 4px solid #FF0000;
+}
+
+.main-btn {
+    width: 50%;
+    float: left;
+    background: #CC0000;
+    border: 4px solid #FF0000;
+    color: #FF6B5A;
+}
+.main-btn:hover {
+    background: #730000;
+}
+
+.pomo-label {
+    padding: 10px;
+    font-size: 24px;
+}
+
+.pomo-inp {
+    size: 2;
+    width: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    color: #ffe6e6;
+    background: #CC2300;
+    border: 2px solid #FF0000;
+    border-radius: 10px;
+}
