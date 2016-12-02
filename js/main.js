@@ -14,6 +14,17 @@ $('document').ready(function() {
     timeMode[1] = new oTimeMode('Short-Break Time', 5, 0);
     timeMode[2] = new oTimeMode('Long-Break Time', 15, 0);
 
+    // Setup shortcut keys
+    $(document).keypress(function(e) {
+      alert(e.charCode);
+      if(e.charCode == 32) {
+        startTimer();
+      }
+      if(e.charCode == 115) {
+        stopTimer();
+      }
+    });
+
     function Timer(timeModeIndex, minute, second, isRunning, timeInterval) {
       this.timeModeIndex = timeModeIndex;
       this.minute = minute;
