@@ -17,9 +17,11 @@ $('document').ready(function() {
     // Setup shortcut keys
     $(document).keypress(function(e) {
       if(e.charCode == 32) {
+        $('#start-btn').addClass('main-btn-pressed').delay(800).removeClass('main-btn-pressed');
         startTimer();
       }
       if(e.charCode == 115) {
+        $('#stop-btn').addClass('main-btn-pressed').delay(800).removeClass('main-btn-pressed');
         stopTimer();
       }
     });

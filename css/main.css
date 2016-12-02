@@ -65,7 +65,7 @@ body {
   text-align: center;
   color: #7F2626;
   text-shadow: 0 0 0.2em #F87;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 #timer-wrapper .ctrl-btn {
@@ -88,6 +88,9 @@ body {
     color: #FF6B5A;
 }
 .main-btn:hover {
+    background: #730000;
+}
+.main-btn-pressed {
     background: #730000;
 }
 
