@@ -81,17 +81,18 @@ $('document').ready(function() {
         if (currTimer.second > 0 || currTimer.minute > 0) {
             if (currTimer.second > 0) {
                 currTimer.second--;
-                $('#second').html(currTimer.second);
             } else {
                 currTimer.minute--;
                 currTimer.second = 59;
-                $('#minute').html(currTimer.minute);
-                $('#second').html(currTimer.second);
             }
+            $('#minute').html(currTimer.minute);
+            $('#second').html(currTimer.second);
         } else {
             clearInterval(currTimer.timeInterval);
             currTimer.isRunning = false;
-            alert('Time out!');
+            $('#minute').html('Time');
+            $('#second').html('out!');
+            document.getElementById('alarm-sound').play();
         }
     }
 
