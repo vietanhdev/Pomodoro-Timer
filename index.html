@@ -23,42 +23,29 @@
 
 		<div class="time">
 			<div class="show-time">
-				25:00
+				<span id="minute">25</span>:<span id="second">00</span>
 			</div>
 			<div class="ctrl-btn">
-				<button class="main-btn">START</button>
-				<button class="main-btn">STOP</button>
+				<button id="start-btn" class="main-btn" >START</button>
+				<button id="stop-btn" class="main-btn" >STOP</button>
 			</div>
 		</div>
 
+
+
 <div class="setting-wrapper" style="clear: both; padding: 10px;">
 		<table>
+			<thead>
+					<th colspan="3">Please enable javascript to use this Pomodoro Timer!</th>
+			</thead>
 			<tbody>
-					<tr>
-							<td><span class="pomo-label">Pomodoro Time</span></td>
-							<td><input class="pomo-inp" size="2" type="number" value="00"> m</td>
-						  <td><input class="pomo-inp" size="2" type="number" value="00"> s</td>
-					</tr>
-					<tr>
-							<td><span class="pomo-label">Short Break Time</span></td>
-							<td><input class="pomo-inp" size="2" type="number" value="00"> m</td>
-						  <td><input class="pomo-inp" size="2" type="number" value="00"> s</td>
-					</tr>
-					<tr>
-							<td><span class="pomo-label">Long Break Time</span></td>
-							<td><input class="pomo-inp" size="2" type="number" value="00"> m</td>
-						  <td><input class="pomo-inp" size="2" type="number" value="00"> s</td>
-					</tr>
-					<tr>
-							<td><span class="pomo-label">Num of Short Breaks</span></td>
-							<td><input class="pomo-inp" size="2" type="number" value="00"></td>
-					</tr>
 			</tbody>
 		</table>
 </div>
 
 </div>
-
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
