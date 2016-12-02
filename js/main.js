@@ -16,7 +16,6 @@ $('document').ready(function() {
 
     // Setup shortcut keys
     $(document).keypress(function(e) {
-      alert(e.charCode);
       if(e.charCode == 32) {
         startTimer();
       }
