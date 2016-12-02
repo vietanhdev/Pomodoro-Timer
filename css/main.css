@@ -65,7 +65,7 @@ body {
   text-align: center;
   color: #7F2626;
   text-shadow: 0 0 0.2em #F87;
-  line-height: 1.2;
+  line-height: normal;
 }
 
 #timer-wrapper .ctrl-btn {
