@@ -87,6 +87,7 @@ $('document').ready(function() {
 
     function startTimer() {
       if (!currTimer.isRunning) {
+        updateTimeMode();
         currTimer.minute = timeMode[currTimer.timeModeIndex].minute;
         currTimer.second = timeMode[currTimer.timeModeIndex].second;
         currTimer.isRunning = true;
