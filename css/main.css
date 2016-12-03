@@ -8,13 +8,13 @@ body {
 
 #logo .pomodoro {
   padding: 10px;
-    background: #FF4C4C;
+    background: #FFB6B9;
     border-radius: 10px;
     color: #7F2626;
 }
 
 #logo .timer {
-    color: #CC0000;
+    color: #FF9290;
 }
 
 .menu {
@@ -26,7 +26,7 @@ body {
 }
 
 .menu li {
-    background: #7F0000;
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     float: right;
     margin: 10px 10px;
@@ -34,11 +34,11 @@ body {
 }
 
 .menu li:hover {
-  background: #480000;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .menu li a {
-    color: #FF4C4C;
+    color: #FF0000;
     text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ body {
   font-family: 'Bungee', cursive;
   font-size: 100px;
   text-align: center;
-  color: #7F2626;
+  color: #910300;
   text-shadow: 0 0 0.2em #F87;
   line-height: normal;
 }
@@ -76,19 +76,19 @@ body {
   font-size: 16px;
   margin-left: auto;
   margin-right: auto;
-  background: rgba(127, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   border: 4px solid #FF0000;
 }
 
 .main-btn {
     width: 50%;
     float: left;
-    background: #CC0000;
+    background: #730000;
     border: 4px solid #FF0000;
     color: #FF6B5A;
 }
 .main-btn:hover {
-    background: #730000;
+    background: #880000;
 }
 .main-btn-pressed {
     background: #730000;
