@@ -16,30 +16,30 @@ $('document').ready(function() {
 
     // Setup shortcut keys
     $(document).keypress(function(e) {
-      if(e.charCode == 32) {
-        startTimer();
-      }
-      if(e.charCode == 115) {
-        stopTimer();
-      }
+        if (e.charCode == 32) {
+            startTimer();
+        }
+        if (e.charCode == 115) {
+            stopTimer();
+        }
     });
 
     function Timer(timeModeIndex, minute, second, isRunning, timeInterval) {
-      this.timeModeIndex = timeModeIndex;
-      this.minute = minute;
-      this.second = second;
-      this.isRunning = isRunning;
-      this.timeInterval =  timeInterval;
+        this.timeModeIndex = timeModeIndex;
+        this.minute = minute;
+        this.second = second;
+        this.isRunning = isRunning;
+        this.timeInterval = timeInterval;
     }
 
     var currTimer = new Timer(0, timeMode[0].minute, false, timeMode[0].second);
 
     function updateTimeMode() {
-      for (let index in timeMode) {
-          // Update Timer
-          timeMode[index].minute = parseInt($('#timemode' + index).find('.timemode-minute').val(), 10) || 0;
-          timeMode[index].second = parseInt($('#timemode' + index).find('.timemode-second').val(), 10) || 0;
-      }
+        for (let index in timeMode) {
+            // Update Timer
+            timeMode[index].minute = parseInt($('#timemode' + index).find('.timemode-minute').val(), 10) || 0;
+            timeMode[index].second = parseInt($('#timemode' + index).find('.timemode-second').val(), 10) || 0;
+        }
     }
 
     function changeTimeMode(index) {
@@ -97,13 +97,15 @@ $('document').ready(function() {
     }
 
     function startTimer() {
-      if (!currTimer.isRunning) {
-        updateTimeMode();
-        currTimer.minute = timeMode[currTimer.timeModeIndex].minute;
-        currTimer.second = timeMode[currTimer.timeModeIndex].second;
-        currTimer.isRunning = true;
-        currTimer.timeInterval = setInterval(function(){loopTime()}, 1000);
-      }
+        if (!currTimer.isRunning) {
+            updateTimeMode();
+            currTimer.minute = timeMode[currTimer.timeModeIndex].minute;
+            currTimer.second = timeMode[currTimer.timeModeIndex].second;
+            currTimer.isRunning = true;
+            currTimer.timeInterval = setInterval(function() {
+                loopTime()
+            }, 1000);
+        }
     }
     $('#start-btn').click(startTimer);
 

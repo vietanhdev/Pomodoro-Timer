@@ -1,5 +1,5 @@
 body {
-  padding: 10px;
+    padding: 10px;
     font-size: 14px;
     color: #FF4C4C;
     background: #7F2626;
@@ -7,10 +7,10 @@ body {
 }
 
 #logo .pomodoro {
-  padding: 10px;
-    background: #FFB6B9;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    color: #7F2626;
+    color: #FF0000;
 }
 
 #logo .timer {
@@ -58,26 +58,26 @@ body {
     width: 100%;
 }
 
-#timer-wrapper > .time > .show-time {
-  clear: both;
-  font-family: 'Bungee', cursive;
-  font-size: 100px;
-  text-align: center;
-  color: #910300;
-  text-shadow: 0 0 0.2em #F87;
-  line-height: normal;
+#timer-wrapper>.time>.show-time {
+    clear: both;
+    font-family: 'Bungee', cursive;
+    font-size: 100px;
+    text-align: center;
+    color: #910300;
+    text-shadow: 0 0 0.2em #F87;
+    line-height: normal;
 }
 
 #timer-wrapper .ctrl-btn {
-  color: #FFF;
+    color: #FFF;
 }
 
 .setting-wrapper {
-  font-size: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  background: rgba(0, 0, 0, 0.5);
-  border: 4px solid #FF0000;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.5);
+    border: 4px solid #FF0000;
 }
 
 .main-btn {
@@ -87,9 +87,11 @@ body {
     border: 4px solid #FF0000;
     color: #FF6B5A;
 }
+
 .main-btn:hover {
     background: #880000;
 }
+
 .main-btn-pressed {
     background: #730000;
 }
@@ -119,10 +121,10 @@ body {
     width: 100%;
 }
 
-
 .selected-timemode {
-  color: #FF0000;
+    color: #FF0000;
 }
+
 .selected-timemode::before {
-  content: "> ";
+    content: "> ";
 }
